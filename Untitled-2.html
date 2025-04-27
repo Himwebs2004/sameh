@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Für dich</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 30px;
+        }
+        .photo-frame {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            border: 8px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #ffecec;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo-frame img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .message {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .next-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .next-btn:hover {
+            background-color: #ff5252;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Für jemand Besonderes</h1>
+        
+        <div class="photo-frame">
+            <!-- Replace with your photo (landscape/couple photo works best) -->
+            <img src="0bcf06b5b759b97e31719ce20ac7ff20~tplv-tiktokx-cropcenter_1080_1080.jpeg" alt="Ein besonderer Moment">
+        </div>
+        
+        <div class="message">
+            <p>Wenn ich dieses Bild sehe, erinnere ich mich an all die kleinen Momente, die mich verrückt nach dir machen.</p>
+            
+            <p>Deine Art zu lachen, deine Gedanken, sogar deine Macken - all das fehlt mir, wenn du nicht da bist.</p>
+            
+            <p>Ich wollte dir nur sagen, dass du mir sehr fehlst und ich oft an dich denke.</p>
+        </div>
+        
+        <button class="next-btn" onclick="location.href='page2.html'">Weiter zu meinem Herzen</button>
+    </div>
+</body>
+</html>
